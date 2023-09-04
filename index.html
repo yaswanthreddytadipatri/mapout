@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Glassdoor</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Condensed:900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Montserrat", serif;
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+    }
+    #top {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #top::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 200px;
+      width: 100%;
+      background: linear-gradient(to top, #fff, transparent);
+      z-index: 1000;
+    }
+    #man {
+      top: inherit;
+      bottom: 0;
+    }
+    section img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+    #text {
+      position: relative;
+      color: white;
+      font-size: 10rem;
+    }
+    #sec {
+      padding: 100px;
+      padding-bottom: 20px;
+    }
+    #sec h2 {
+      font-size: 4rem;
+      margin-bottom: 30px;
+      color: #20496a;
+    }
+    #sec p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      font-weight: 300;
+      color: #20496a;
+    }
+    footer {
+      margin-top: 30px;
+      display: flex;
+      padding: 20px;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #b0dfea;
+    }
+    footer a {
+      color: #20496a;
+    }
+    footer a i {
+      transition: 0.2s;
+    }
+    footer a:nth-of-type(3),
+    footer a:nth-of-type(4),
+    footer a:nth-of-type(5) {
+      font-size: 1.3rem;
+    }
+    footer a i:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="color: rgb(62, 139, 62)"
+          >Glassdoor</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="" class="nav-link">Community</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Companies</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Salaries</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">For Employers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section id="top" style="background-color: black">
+      <h2 id="text" style="text-align: center; font-size: 10vw">
+        Your work people are here
+      </h2>
+      <img
+        src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_1.png"
+        id="clouds_1"
+      />
+      <img
+        src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_2.png"
+        id="clouds_2"
+      />
+      <div id="mountain_left" style="background-color: white"></div>
+      <div id="mountain_right"></div>
+    </section>
+
+    <section class="ftco-section ftco-intro">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-md-8">
+            <h2>Get ahead with Glassdoor</h2>
+            <p>
+              We're serving up trusted insights and anonymous conversation, so
+              you'll have the goods you need to succeed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section py-5 py-md-0">
+      <div class="container">
+        <div class="row no-gutters d-flex">
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon"><span class="flaticon-layers"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Join your work community</h3>
+                <p>
+                  203 Fake St. Mountain View, San Francisco, California, USA
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services active d-block">
+              <div class="icon">
+                <span class="flaticon-web-programming"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Find and apply to jobs</h3>
+                <p>
+                  A small river named Duden flows by their place and supplies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon"><span class="flaticon-idea"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Search company reviews</h3>
+                <p>
+                  A small river named Duden flows by their place and supplies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services active-2 d-block">
+              <div class="icon"><span class="flaticon-contract"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3">Compare salaries</h3>
+                <p>
+                  A small river named Duden flows by their place and supplies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-portfolio">
+      <div class="container-fluid">
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-12 mb-5 heading-section text-center ftco-animate">
+            <h2 class="mb-5">Start Your <span>Search</span></h2>
+            <h4 class="mb-1">
+              Need some inspiration? See what millions of people are looking for
+              on Glassdoor today.
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+		  <a class="btn btn-primary " data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" id="viewing">View More</a>
+        <!-- <div class="row no-gutters">
+          <div class="col-md-12 portfolio-wrap">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-7">
+                <div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
+                  <div class="px-4 px-lg-4">
+                    <div class="desc">
+                      <div class="top">
+                        <h2 class="mb-4">
+                          <a href="work.html">Popular Jobs</a>
+                        </h2>
+                      </div>
+                      <div class="absolute">
+                        
+                        <p><a href="#" class="custom-btn">View Portfolio</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <table class="table" class="collapse multi-collapse" id="multiCollapseExample1">
+          <thead>
+            <tr data-aos="fade-right">
+              <th scope="col">Popular Jobs</th>
+              <th scope="col">Browse Jobs by City</th>
+              <th scope="col">Browse Jobs by Company</th>
+              <th scope="col">Trending Job Searches</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-aos="fade-right">
+              <td scope="row" data-aos="fade-right">
+                Software Engineer <br />
+                Senior Software Engineer <br />
+                Full Stack Developer <br />
+                Developer <br />
+                Data Engineer <br />
+                Data Scientist <br />
+                SAP Consultant <br />
+                Software Architect <br />
+                Data Analyst <br />
+                Software Test Engineer <br />
+                Java Developer <br />
+                Machine Learning Engineer <br />
+                Front End Developer <br />
+                .NET Developer <br />
+                Technical Support Engineer <br />
+                Development Operations Engineer<br />
+                Account Manager<br />
+                Php Developer<br />
+                Cloud Engineer<br />
+                Quality Assurance Engineer<br />
+                System Engineer<br />
+                Web Developer<br />
+                Back End Developer<br />
+                Business Analyst<br />
+                Digital Marketer<br />
+                Software Engineering Manager<br />
+                Analyst<br />
+                Product Manager<br />
+                Software Development Specialist<br />
+                Analytics Consultant<br />
+                R&D Engineer<br />
+                Principal Software Engineer<br />
+                Business Development Executive<br />
+                Delivery Person<br />
+                Engineer<br />
+                Operations Associate<br />
+                Application Developer<br />
+                Senior Product Manager<br />
+                Product Owner<br />
+                iOS Developer<br />
+              </td>
+              <td scope="row" data-aos="fade-right">
+                Bangalore<br />
+                Madurai<br />
+                Chennai<br />
+                Auroville<br />
+                Trichy<br />
+                Salem<br />
+                Visakhapatnam<br />
+                Coimbatore<br />
+                Mangalore<br />
+                Kakinada<br />
+                Technopark<br />
+                Pune<br />
+                Nashik<br />
+                Vijayawāda<br />
+                Puducherry<br />
+                Cochin<br />
+                Palakkad<br />
+                Shimoga<br />
+                Bareilly<br />
+                Kumbakonam<br />
+                Tuticorin<br />
+                New Delhi<br />
+                Hyderābād<br />
+                Mumbai<br />
+                Pudukkottai<br />
+                Mysore<br />
+                Gobichettipalayam<br />
+                Nagercoil<br />
+                Guwahati<br />
+                Kanjirappally<br />
+                Ranjangaon<br />
+                Durgapur<br />
+                Shillong<br />
+                Perundurai<br />
+                Erode<br />
+                Shirwal<br />
+                Gangaikondān<br />
+                Adoor<br />
+                Eranakulam<br />
+                Kāraikkudi<br />
+              </td>
+              <td scope="row" data-aos="fade-right">
+                Walmart<br />
+                Tata Consultancy Services<br />
+                Reliance Industries<br />
+                Infosys<br />
+                Tech Mahindra<br />
+                Wipro<br />
+                Reliance Communications<br />
+                Siemens Healthcare<br />
+                Quess<br />
+                Aditya Birla Group<br />
+                HCL Technologies<br />
+                ICICI Bank<br />
+                HDFC Bank<br />
+                Axis Bank<br />
+                Shriram Transport Finance<br />
+                Apollo Hospitals<br />
+                MphasiS<br />
+                LTI<br />
+                Uttar Pradesh State Road Transport Corporation<br />
+                WNS<br />
+                Food Corporation of India<br />
+                Mindtree<br />
+                Robert Bosch India<br />
+                ITC<br />
+                Hero MotoCorp<br />
+                Lupin<br />
+                Page Industries<br />
+                Reliance Jio Infocomm<br />
+                HDFC Standard Life Insurance<br />
+                Delhivery<br />
+                Conneqt Business Solutions<br />
+                L&T Technology Services<br />
+                Flipkart<br />
+                Kanan Devan Hills Plantations<br />
+                Reliance Retail<br />
+                Coforge<br />
+                Medicover Fertility<br />
+                MediBuddy<br />
+                IGT Solutions<br />
+                Equitas Small Finance<br />
+                Bank<br />
+              </td>
+              <td scope="row" data-aos="fade-right">
+                Part Time Jobs in Bangalore <br />
+                Part Time Jobs in Chennai<br />
+                Fresher Jobs in Bangalore<br />
+                Work From Home Jobs in Chennai<br />
+                Data Analyst Jobs in Bangalore<br />
+                Technical Writer Jobs in Pune<br />
+                Manual Testing Jobs in Chennai<br />
+                QA Manual Testing Jobs in Pune<br />
+                Fresher Jobs in Chennai<br />
+                Data Scientist Jobs in Pune<br />
+                Driver Jobs in Coimbatore<br />
+                Fresher Jobs in Coimbatore<br />
+                Digital Marketing Freshers Jobs in Mumbai<br />
+                Mechanical Engineer Jobs in Pune<br />
+                Electrical Engineer Jobs in Ahmedabad<br />
+                Fresher Mechanical Engineer Jobs in Coimbatore<br />
+                Teacher Jobs in Mumbai<br />
+                HR Jobs in Coimbatore<br />
+                QA Manual Testing Jobs in Hyderābād<br />
+                Physiotherapist Jobs in Mumbai<br />
+                Chartered Accountant Jobs in Mumbai<br />
+                Physiotherapist Jobs in New Delhi<br />
+                Psychologist Jobs in New Delhi<br />
+                Teacher Jobs in Kalyan<br />
+                School Teacher Jobs in Mohali<br />
+                Fresher Software Jobs in Hyderābād<br />
+                Data Analyst Jobs in Hyderābād<br />
+                Data Scientist Jobs in Hyderābād<br />
+                QA Manual Testing Jobs in Noida<br />
+                Data Analyst Jobs in Noida<br />
+                Work From Home Jobs in Calcutta<br />
+                Teacher Jobs in Salem<br />
+                Python Jobs in Ahmedabad<br />
+                Graphic Designer Jobs in Lucknow<br />
+                MBA Fresher Jobs in Chandigarh<br />
+                Work From Home Jobs in Technopark<br />
+                Nursing Jobs in Kalyan<br />
+                AML Jobs in Gurgaon<br />
+                Assistant Professor Jobs in Gurgaon<br />
+                Chemistry Jobs in Cochin<br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h1></h1>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <!-- Name: Tadipatri Yaswanth Reddy -->
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Glassdoor</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Portfolio</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy</a></li>
+                <li><a href="#" class="py-2 d-block">Terms Condition</a></li>
+              </ul>
+              <ul
+                class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
+              >
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-twitch"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-youtube"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Employers</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="py-2 d-block">Get a FREE Employer</a>
+                </li>
+                <li><a href="#" class="py-2 d-block">Account</a></li>
+                <li><a href="#" class="py-2 d-block">Employer Centre</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Help / Contact Us</a></li>
+                <li><a href="#" class="py-2 d-block">Guidelines</a></li>
+                <li><a href="#" class="py-2 d-block">Terms of Use</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy & Cookies</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy Centre</a></li>
+                <li>
+                  <a href="#" class="py-2 d-block">Do Not Sell Or Share</a>
+                </li>
+                <li><a href="#" class="py-2 d-block">My Information</a></li>
+                <li>
+                  <a href="#" class="py-2 d-block">Cookie Consent Tool</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Work With Us</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Advertisers</a></li>
+                <li><a href="#" class="py-2 d-block">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+                // <!-- Name: Tadipatri Yaswanth Reddy -->
+              </script>
+              Browse by: Companies Jobs Locations <br />
+              Copyright © 2008-2023, Glassdoor, Inc. "Glassdoor" and logo are
+              registered trademarks of Glassdoor, Inc
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </body>
+  <script>
+    $("#multiCollapseExample1").hide();
+    $("#viewing").click(function(){
+      $("#multiCollapseExample1").fadeIn(3000);
+      $("#viewing").text("View Less");
+      $("#viewing").click(function(){
+        $("#multiCollapseExample1").hide();
+        $("#viewing").text("View More");
+      });
+    });
+    
+
+    
+    const mountainLeft = document.querySelector("#mountain_left");
+    const mountainRight = document.querySelector("#mountain_right");
+    const cloud1 = document.querySelector("#clouds_1");
+    const cloud2 = document.querySelector("#clouds_2");
+    const text = document.querySelector("#text");
+    const man = document.querySelector("#man");
+
+    window.addEventListener("scroll", () => {
+      let value = scrollY;
+      mountainLeft.style.left = `-${value / 0.7}px`;
+      cloud2.style.left = `-${value * 2}px`;
+      mountainRight.style.left = `${value / 0.7}px`;
+      cloud1.style.left = `${value * 2}px`;
+      text.style.bottom = `-${value}px`;
+      man.style.height = `${window.innerHeight - value}px`;
+    });
+  </script>
+</html>
